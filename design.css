@@ -1,0 +1,109 @@
+.main_block {
+    font-family: "Candara Light", serif;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h2, h3, h4 {
+    font-family: Bahnschrift, serif;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 100, 0, 0.4);
+    padding: 8px 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: content-box;
+    align-content: center;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.row img {
+    margin: 10px 30px;
+    width: 40%;
+    height: 40%;
+    flex-shrink: 1;
+    max-height: 450px;
+    align-self: center;
+}
+
+.block1 {
+    float: left;
+    margin: 10px;
+    text-align: justify;
+    padding: 20px 30px;
+    flex-shrink: 1;
+    background-color: aliceblue;
+}
+
+.block2 {
+    width: 25%;
+}
+
+@media (max-width: 1200px) {
+    .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block1 {
+        margin: 10px;
+    }
+
+    .row img {
+        width: 94%;
+        height: 94%;
+        align-self: center;
+    }
+
+    #one {
+        max-width: 350px;
+    }
+
+    #two {
+        max-width: 650px;
+    }
+
+    h2 {
+        align-self: center;
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .row, .block1 {
+        width: 94%;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 420px) {
+    h3 {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .block1 {
+        max-width: 250px;
+        font-size: 18px;
+    }
+}

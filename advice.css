@@ -1,0 +1,82 @@
+.main_block {
+    font-family: "Candara Light", serif;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h2, h3, h4 {
+    font-family: Bahnschrift, serif;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: rgba(0, 100, 0, 0.4);
+    padding: 8px 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block3 {
+    float: left;
+    margin: 10px;
+    text-align: justify;
+    width: 33.3333333333%;
+    padding-bottom: 33.3333333333%;
+    flex-shrink: 1;
+    background-color: aliceblue;
+}
+
+.block1 {
+    height: content-box;
+    float: left;
+    margin: 20px;
+    flex-basis: 400px;
+    flex-shrink: 0;
+    text-align: justify;
+    padding: 10px;
+}
+
+.block1 img {
+    margin-top: 15px;
+    width: 400px;
+}
+
+.block2 {
+    width: 25%;
+}
+
+@media (max-width: 420px) {
+    .block1 {
+        flex-basis: 300px;
+        max-width: 250px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .block1 img {
+        margin-top: 15px;
+        max-width: 250px;
+    }
+    .main_block {
+        margin-left: 5px;
+        overflow-x: hidden;
+    }
+
+}

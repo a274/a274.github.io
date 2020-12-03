@@ -1,0 +1,123 @@
+.main_block {
+    font-family: "Candara Light", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 22px;
+    width: 100%;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+h2, h3, h4 {
+    font-family: Bahnschrift, serif;
+    text-align: center;
+}
+
+header {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+html {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#pic {
+    padding-bottom: 80px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px 10px;
+    width: 90%;
+    text-align: justify;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 10px 60px;
+    height: content-box;
+    width: 100%;
+}
+
+.grey-block {
+    padding-top: 80px;
+    height: content-box;
+    width: 100%;
+    background-color: rgba(102, 102, 102, 0.1);
+}
+
+.pic-text {
+    align-self: center;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.block3 {
+    margin: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.block3:hover a {
+    object-fit: cover;
+    filter: brightness(100%);
+    z-index: 10;
+}
+
+.block3 img  {
+    object-fit: cover;
+    width: 576px;
+    height: 384px;
+    filter: brightness(65%);
+}
+
+.block3:hover img {
+    object-fit: cover;
+    filter: brightness(100%);
+    z-index: 10;
+}
+
+.block1 {
+}
+
+@media (max-width: 420px) {
+    .block3 {
+        margin-left: -10px;
+    }
+
+    .block3 img  {
+        width: 288px;
+        height: 192px;
+    }
+
+
+    .main_block {
+        font-size: 18px;
+    }
+
+}
+
